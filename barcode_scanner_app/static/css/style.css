@@ -1,0 +1,171 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+body { 
+    background: #f8fafc; 
+    min-height: 100vh; 
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.08) 0%, transparent 20%);
+}
+
+/* Navbar Kaca (Glassmorphism) */
+.glass-header {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #f3e8ff 0%, #fce7f3 100%);
+    border-radius: 12px;
+    box-shadow: inset 0 2px 4px rgba(255,255,255,0.8), 0 4px 10px rgba(139, 92, 246, 0.15);
+}
+
+.header-titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-titles h1 { 
+    font-size: 18px; 
+    font-weight: 800; 
+    background: linear-gradient(135deg, #6d28d9 0%, #be185d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.3px;
+}
+
+.header-titles p { 
+    font-size: 11px; 
+    font-weight: 600;
+    color: #64748b; 
+    margin-top: 2px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.status-badge {
+    background: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #10b981;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border: 1px solid #f1f5f9;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #10b981;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+    70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* Remove old header styles */
+
+.content { padding: 16px; display: flex; flex-direction: column; align-items: center; }
+
+.camera-card {
+    background: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+#reader { width: 100%; min-height: 300px; }
+
+/* Tombol Start Kamera Premium */
+.start-btn {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 16px auto;
+    padding: 18px;
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px -6px rgba(236, 72, 153, 0.5);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.start-btn:active { transform: scale(0.97); box-shadow: 0 4px 10px -4px rgba(236, 72, 153, 0.5); }
+.start-btn:disabled { background: #cbd5e1; box-shadow: none; color: #94a3b8; transform: none; }
+
+/* Log / Status Card */
+.log-card {
+    background: white;
+    border-left: 4px solid #22c55e;
+    border-radius: 6px;
+    padding: 16px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 16px auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    display: none;
+}
+.log-card.error { border-left-color: #ef4444; }
+.log-card.info { border-left-color: #3b82f6; }
+.log-title { font-weight: 700; color: #1f2937; margin-bottom: 4px; }
+.log-msg { color: #4b5563; font-size: 13px; line-height: 1.4; }
+
+/* Tombol Pindai Berikutnya */
+.next-btn {
+    display: none;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 16px auto;
+    padding: 16px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(34,197,94,0.3);
+}
+.next-btn:active { background: #16a34a; }
+
+/* Debug info - tersembunyi */
+.debug { display: none; }

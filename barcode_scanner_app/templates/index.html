@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Scanner Utama Sentosa</title>
+    <!-- CSS Terpisah -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div class="glass-header">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 7V5C3 3.89543 3.89543 3 5 3H7M17 3H19C20.1046 3 21 3.89543 21 5V7M21 17V19C21 20.1046 20.1046 21 19 21H17M7 21H5C3.89543 21 3 20.1046 3 19V17" stroke="url(#paint0_linear)" stroke-width="2.5" stroke-linecap="round"/>
+                    <rect x="7" y="7" width="10" height="10" rx="2" fill="url(#paint1_linear)"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8B5CF6"/>
+                            <stop offset="1" stop-color="#EC4899"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear" x1="7" y1="7" x2="17" y2="17" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8B5CF6"/>
+                            <stop offset="1" stop-color="#EC4899"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="header-titles">
+                <h1>Utama Sentosa</h1>
+                <p>POS Scanner Hub</p>
+            </div>
+        </div>
+        <div class="status-badge">
+            <span class="dot pulse"></span>
+            Online
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Area Kamera -->
+        <div class="camera-card">
+            <div id="reader"></div>
+        </div>
+
+        <!-- Tombol Start Kamera (di bawah area kamera) -->
+        <button class="start-btn" id="startBtn" onclick="mulaiKamera()">
+            Mulai Kamera
+        </button>
+
+        <!-- Status Log -->
+        <div class="log-card" id="logCard">
+            <div class="log-title" id="logTitle"></div>
+            <div class="log-msg" id="logMsg"></div>
+        </div>
+
+        <!-- Tombol Pindai Berikutnya -->
+        <button class="next-btn" id="nextBtn" onclick="pindaiLagi()">
+            Pindai Berikutnya
+        </button>
+
+        <!-- Debug (tersembunyi) -->
+        <div class="debug" id="debugInfo"></div>
+
+    </div>
+
+    <!-- Library html5-qrcode: Dimuat dari file LOKAL (bukan CDN internet) -->
+    <script src="/static/html5-qrcode.min.js"></script>
+
+    <!-- JavaScript Terpisah -->
+    <script src="/static/js/main.js"></script>
+
+</body>
+</html>
