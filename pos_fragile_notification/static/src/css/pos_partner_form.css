@@ -1,0 +1,137 @@
+/* Custom Styling for Simplified Partner Form in POS */
+
+/* Bikin modalnya flex agar bisa benar-benar di tengah layar (vertikal & horizontal) */
+.modal:has(.pos_custom_partner_form) {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Sembunyikan tombol Discard yang dobel fungsinya dengan tombol X */
+.modal:has(.pos_custom_partner_form) footer .btn-secondary {
+    display: none !important;
+}
+
+/* Dialog container styling to make it smaller if possible */
+.modal-dialog:has(.pos_custom_partner_form),
+.o_dialog:has(.pos_custom_partner_form) {
+    max-width: 450px !important; /* Diperkecil */
+    width: 100% !important;
+    margin: 0 !important; /* Reset margin karena sudah di-center oleh flex parent */
+}
+
+/* Paksa modal content & body agar tingginya pas dengan isi form (tidak mulur ke bawah) */
+.modal-content:has(.pos_custom_partner_form),
+.modal-body:has(.pos_custom_partner_form) {
+    height: auto !important;
+    min-height: unset !important;
+}
+
+.pos_custom_partner_form {
+    display: block;
+    padding: 1rem 0 !important; /* Beri sedikit jarak atas bawah */
+}
+
+.pos_custom_partner_form .o_form_sheet {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important; /* Dibuat lebih soft */
+    border-radius: 12px !important;
+    padding: 1.5rem 1.5rem !important; /* Diperkecil dari 2.5rem */
+    max-width: 400px !important;
+    width: 100% !important;
+    border: 1px solid #f3f4f6 !important;
+    margin: 0 auto !important;
+    background-color: #ffffff !important;
+}
+
+.custom_form_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Jarak antar input diperkecil */
+}
+
+.custom_field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem; /* Jarak label ke input diperkecil */
+    width: 100%;
+}
+
+.custom_label {
+    font-size: 0.95rem !important; /* Label diperkecil sedikit */
+    font-weight: 600 !important;
+    color: #4b5563 !important;
+    margin: 0 !important;
+}
+
+.custom_field .o_field_widget {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.custom_field .o_field_widget input {
+    width: 100% !important;
+    border-radius: 8px !important; /* Sedikit kurang melengkung */
+    font-size: 1rem !important; /* Teks input diperkecil */
+    padding: 0.6rem 1rem !important; /* Padding input diperkecil */
+    border: 1.5px solid #e5e7eb !important;
+    background-color: #f9fafb !important;
+    transition: all 0.2s ease-in-out !important;
+    color: #1f2937 !important;
+    box-sizing: border-box !important;
+}
+
+.custom_field .o_field_widget input:focus {
+    border-color: #714B67 !important; /* Odoo deep purple */
+    background-color: #ffffff !important;
+    box-shadow: 0 0 0 4px rgba(113, 75, 103, 0.15) !important;
+    outline: none !important;
+}
+
+.custom_field .o_field_widget input::placeholder {
+    color: #9ca3af !important;
+    font-weight: 400 !important;
+}
+
+/* Fix any default Odoo form spacing */
+.pos_custom_partner_form .o_group {
+    display: none !important; /* Hide standard groups if any exist */
+}
+
+/* Buttons styling */
+.point_of_sale .modal-footer {
+    border-top: none !important;
+    padding: 1rem 2rem 2rem !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+}
+
+.point_of_sale .modal-footer .btn-primary {
+    background-color: #714B67 !important;
+    border-color: #714B67 !important;
+    border-radius: 10px !important;
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    padding: 0.8rem 2.5rem !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 10px rgba(113, 75, 103, 0.2) !important;
+}
+
+.point_of_sale .modal-footer .btn-primary:hover {
+    background-color: #5d3d54 !important;
+    border-color: #5d3d54 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(113, 75, 103, 0.3) !important;
+}
+
+.point_of_sale .modal-footer .btn-secondary {
+    border-radius: 10px !important;
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    padding: 0.8rem 2.5rem !important;
+    color: #4b5563 !important;
+    background-color: #f3f4f6 !important;
+    border: 1px solid #e5e7eb !important;
+    transition: all 0.2s ease !important;
+}
+
+

@@ -1,0 +1,27 @@
+/* ============================================================================
+   Order Summary & Cart Styling (Left Pane)
+   ============================================================================ */
+
+/* Baris pesanan yang dipilih (Selected Orderline) */
+.product-screen .leftpane .order-container .orderline.selected {
+    background-color: rgba(139, 92, 246, 0.25) !important; /* Ungu gelap transparan */
+    border-radius: 8px !important;
+}
+
+/* Baris pesanan saat di-hover */
+.product-screen .leftpane .order-container .orderline:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Teks Taxes dan Total di order summary */
+.product-screen .leftpane .order-summary,
+.product-screen .leftpane .order-summary .text-muted {
+    color: #f8fafc !important; /* Putih terang agar terbaca jelas */
+}
+
+.point_of_sale .modal-footer .btn-secondary:hover {
+    background-color: #e5e7eb !important;
+    color: #1f2937 !important;
+}
+
+

@@ -16,10 +16,17 @@
     'depends': ['point_of_sale', 'product', 'stock'],
     'data': [
         'views/fragile_dialog.xml',
+        'views/res_partner_views.xml',
     ],
     'assets': {
         'point_of_sale._assets_pos': [
             'pos_fragile_notification/static/src/js/fragile_popup.js',
+            'pos_fragile_notification/static/src/css/pos_partner_form.css',
+            'pos_fragile_notification/static/src/css/pos_product_card.css',
+            'pos_fragile_notification/static/src/css/pos_order_summary.css',
+            'pos_fragile_notification/static/src/css/pos_login_screen.css',
+            'pos_fragile_notification/static/src/css/pos_dark_theme.css',
+            'pos_fragile_notification/static/src/xml/product_card_override.xml',
         ],
     },
     'installable': True,

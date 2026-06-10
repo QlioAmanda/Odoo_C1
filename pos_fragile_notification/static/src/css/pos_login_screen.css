@@ -1,0 +1,116 @@
+/* ============================================================================
+   Premium Glassmorphism UI for Login Screen (Open Register)
+   ============================================================================ */
+
+/* 1. Background Animasi Gradient Mewah */
+.login-overlay {
+    background-color: #1e1e2f !important;
+    background-image: radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
+                      radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.15) 0%, transparent 40%),
+                      linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%) !important;
+    background-size: cover !important;
+    z-index: 1050 !important; /* Pastikan menutupi navbar Odoo */
+    position: fixed !important;
+    top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important;
+}
+
+/* Hilangkan background default Odoo */
+.login-overlay.o_attendance_background {
+    background-image: radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
+                      radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.15) 0%, transparent 40%),
+                      linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%) !important;
+    background-color: #1e1e2f !important;
+}
+
+/* 2. Tombol Utama (Open Register / Select Cashier) */
+.login-overlay .open-register-btn {
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
+    border-radius: 24px !important;
+    box-shadow: 0 10px 40px -10px rgba(139, 92, 246, 0.2), inset 0 2px 4px rgba(255, 255, 255, 0.5) !important;
+    color: #1e293b !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    padding: 3rem 4rem !important;
+    max-width: 400px !important;
+    margin: auto !important;
+}
+
+.login-overlay .open-register-btn i.fa-shopping-basket {
+    font-size: 4rem !important;
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    margin-bottom: 1rem !important;
+    filter: drop-shadow(0 4px 6px rgba(236, 72, 153, 0.3)) !important;
+}
+
+.login-overlay .open-register-btn span {
+    font-size: 1.75rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.5px !important;
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.login-overlay .open-register-btn:hover {
+    transform: translateY(-8px) scale(1.02) !important;
+    box-shadow: 0 20px 40px -10px rgba(236, 72, 153, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.8) !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+}
+
+.login-overlay .open-register-btn:active {
+    transform: translateY(2px) scale(0.98) !important;
+    box-shadow: 0 5px 15px -5px rgba(236, 72, 153, 0.2) !important;
+}
+
+/* 3. Tombol Backend (Di bawah) */
+.login-overlay .select-logout {
+    background: rgba(30, 41, 59, 0.8) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 100px !important;
+    color: white !important;
+    font-weight: 600 !important;
+    padding: 0.75rem 2.5rem !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+    letter-spacing: 0.5px !important;
+}
+
+.login-overlay .select-logout:hover {
+    background: rgba(15, 23, 42, 0.95) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 4. Timer/Jam di Kiri Atas */
+.login-overlay .screen-login-timer {
+    color: #f8fafc !important;
+    font-weight: 700 !important;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5) !important;
+}
+
+.login-overlay .timer-hours {
+    font-weight: 800 !important;
+    background: linear-gradient(135deg, #fbcfe8 0%, #f472b6 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* 5. Logo di Kanan Atas */
+.login-overlay .screen-login-logo img {
+    border-radius: 16px !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08) !important;
+    background: white !important;
+    padding: 4px !important;
+    transition: transform 0.3s ease !important;
+}
+
+.login-overlay .screen-login-logo img:hover {
+    transform: scale(1.05) rotate(2deg) !important;
+}
+
+

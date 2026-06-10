@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <!-- Inherit ProductCard OWL Component -->
+    <t t-name="pos_fragile_notification.ProductCard" t-inherit="point_of_sale.ProductCard" t-inherit-mode="extension">
+        <xpath expr="//article" position="inside">
+            <!-- Badge Fragile di pojok kiri atas -->
+            <span t-if="this.isFragileProduct" 
+                  style="font-size: 0.75rem; z-index: 10;" 
+                  class="badge text-bg-danger position-absolute top-0 start-0 m-1">
+                <i class="fa fa-exclamation-triangle me-1"></i> FRAGILE
+            </span>
+        </xpath>
+    </t>
+</templates>

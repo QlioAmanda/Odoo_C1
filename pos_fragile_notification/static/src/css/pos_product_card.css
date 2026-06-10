@@ -1,0 +1,24 @@
+/* ============================================================================
+   Product Card Uniform Height & Empty State Text
+   ============================================================================ */
+
+/* Pastikan semua card produk tingginya seragam */
+.product-screen .product .product-name {
+    height: 2.8rem !important; /* Paksa tinggi seragam untuk 2 baris teks */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: normal !important;
+    line-height: 1.4 !important;
+    margin-top: 4px !important;
+}
+
+/* Teks pencarian kosong agar terbaca di background gelap */
+.product-screen .rightpane .text-center p,
+.product-screen .rightpane .o_view_nocontent {
+    color: #cbd5e1 !important;
+}
+
+

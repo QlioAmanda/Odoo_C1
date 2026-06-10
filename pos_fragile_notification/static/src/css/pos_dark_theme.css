@@ -1,0 +1,262 @@
+/* --- Navbar (Top Header) --- */
+.pos-topheader {
+    background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%) !important;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2) !important;
+}
+
+.pos-topheader .register-label,
+.pos-topheader .orders-button,
+.pos-topheader .btn-light {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    color: #e2e8f0 !important;
+    transition: all 0.25s ease !important;
+}
+
+.pos-topheader .register-label:hover,
+.pos-topheader .orders-button:hover,
+.pos-topheader .btn-light:hover {
+    background: rgba(139, 92, 246, 0.2) !important;
+    border-color: rgba(139, 92, 246, 0.4) !important;
+    color: #fff !important;
+}
+
+.pos-topheader .register-label.active,
+.pos-topheader .orders-button.active {
+    background: rgba(139, 92, 246, 0.25) !important;
+    border-color: rgba(139, 92, 246, 0.5) !important;
+    color: #fff !important;
+    box-shadow: 0 0 12px rgba(139, 92, 246, 0.15) !important;
+}
+
+.pos-topheader .navbar-separator {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Seragamkan ukuran tombol ikon di kanan (Barcode, Profil Kasir, Menu) */
+.pos-topheader .status-buttons > button.btn-light,
+.pos-topheader .status-buttons > .dropdown > button.btn-light,
+.pos-topheader .status-buttons .cashier-name {
+    height: 3rem !important;
+    min-width: 3rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 0.8rem !important;
+}
+
+.pos-topheader .status-buttons .cashier-name img.avatar {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    object-fit: cover !important;
+}
+
+/* Search bar di navbar */
+.pos-topheader .pos-rightheader .input-container.form-control {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #e2e8f0 !important;
+}
+
+.pos-topheader .pos-rightheader .input-container input {
+    background: transparent !important;
+    color: #fff !important;
+}
+
+.pos-topheader .pos-rightheader .input-container input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Icon search dan tanda silang (x) di dalam input */
+.pos-topheader .pos-rightheader .input-container i.fa {
+    color: #cbd5e1 !important;
+}
+
+/* Order tab styling */
+.pos-topheader .order-tab {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #cbd5e1 !important;
+}
+
+.pos-topheader .order-tab.active,
+.pos-topheader .order-tab:hover {
+    background: rgba(139, 92, 246, 0.2) !important;
+    border-color: rgba(139, 92, 246, 0.4) !important;
+    color: #fff !important;
+}
+
+/* Cashier name */
+.pos-topheader .cashier-name {
+    color: #cbd5e1 !important;
+}
+
+/* --- Product Screen Background --- */
+.product-screen .rightpane {
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%) !important;
+}
+
+.product-screen .leftpane {
+    background: linear-gradient(180deg, #1e1e2f 0%, #232342 100%) !important;
+    border-right: 1px solid rgba(139, 92, 246, 0.15) !important;
+}
+
+/* Order summary text di leftpane */
+.product-screen .leftpane .order-container,
+.product-screen .leftpane .summary {
+    color: #e2e8f0 !important;
+}
+
+/* Numpad & action buttons */
+.product-screen .leftpane .numpad .btn {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.product-screen .leftpane .numpad .btn:hover {
+    background: rgba(139, 92, 246, 0.2) !important;
+}
+
+/* Category bar */
+.product-screen .rightpane .category-list {
+    background: transparent !important;
+}
+
+/* Control buttons (Customer, Takeout, Note) */
+.product-screen .control-buttons .btn,
+.product-screen .switchpane .btn-secondary {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.product-screen .control-buttons .btn:hover {
+    background: rgba(139, 92, 246, 0.2) !important;
+}
+
+/* --- Payment Screen Background --- */
+.payment-screen {
+    background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%) !important;
+}
+
+.payment-screen .main-content {
+    background: linear-gradient(135deg, #1e1e2f 0%, #16213e 100%) !important;
+}
+
+.payment-screen .left-content {
+    background: transparent !important;
+}
+
+.payment-screen .center-content {
+    background: transparent !important;
+}
+
+/* Payment method buttons */
+.payment-screen .paymentmethod {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    color: #e2e8f0 !important;
+    transition: all 0.25s ease !important;
+}
+
+.payment-screen .paymentmethod:hover {
+    background: rgba(139, 92, 246, 0.2) !important;
+    border-color: rgba(139, 92, 246, 0.4) !important;
+}
+
+/* Payment total text */
+.payment-screen .total {
+    color: #f8fafc !important;
+}
+
+.payment-screen .total .price-formatter {
+    background: linear-gradient(135deg, #fbcfe8 0%, #f472b6 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Payment buttons (Customer, Invoice, Back) */
+.payment-screen .payment-buttons .btn-secondary {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    color: #e2e8f0 !important;
+}
+
+.payment-screen .payment-buttons .btn-secondary:hover {
+    background: rgba(139, 92, 246, 0.2) !important;
+}
+
+.payment-screen .back-button.btn-secondary {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Numpad di Payment */
+.payment-screen .numpad .btn {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.payment-screen .numpad .btn:hover {
+    background: rgba(139, 92, 246, 0.2) !important;
+}
+
+/* Payment status text */
+.payment-screen .paymentlines-container {
+    color: #e2e8f0 !important;
+}
+
+/* --- Receipt Screen Background --- */
+.receipt-screen {
+    background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%) !important;
+}
+
+/* Left actions pane */
+.receipt-screen .actions {
+    background: transparent !important;
+    border-right: 1px solid rgba(139, 92, 246, 0.15) !important;
+}
+
+/* Payment successful banner - keep green but add glow */
+.receipt-screen .o_payment_successful .border-success {
+    box-shadow: 0 4px 20px rgba(34, 197, 94, 0.15) !important;
+}
+
+/* Receipt options buttons */
+.receipt-screen .receipt-options .btn-secondary {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    color: #e2e8f0 !important;
+}
+
+.receipt-screen .receipt-options .btn-secondary:hover {
+    background: rgba(139, 92, 246, 0.2) !important;
+    border-color: rgba(139, 92, 246, 0.4) !important;
+}
+
+/* Email input */
+.receipt-screen .send-receipt-email-input {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    color: #e2e8f0 !important;
+}
+
+/* Receipt preview background */
+.receipt-screen .pos-receipt-container {
+    background: rgba(255, 255, 255, 0.03) !important;
+}
+
+/* Keep actual receipt white */
+.receipt-screen .pos-receipt-container > div {
+    background: #fff !important;
+}
+
+/* Notice text */
+.receipt-screen .notice {
+    color: #cbd5e1 !important;
+}
+
+
