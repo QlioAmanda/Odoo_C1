@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Template dikosongkan untuk menghapus loading fragile_style.css yang tidak ada -->
-    <!-- Ini memperbaiki error strict MIME checking ('text/html') pada browser -->
+    <!-- File ini sengaja dikosongkan -->
 </odoo>

@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Database backup (terlalu besar untuk Git, simpan di cloud storage)
+*.zip
+
+# IDE
+.vscode/
+.idea/
