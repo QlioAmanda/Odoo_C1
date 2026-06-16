@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
-from flask_cors import CORS
-import keyboard
+from flask_cors import CORS  # type: ignore[import-untyped]
+import keyboard  # type: ignore[import-untyped]
 import ctypes
 import ctypes.wintypes as wintypes
 import logging

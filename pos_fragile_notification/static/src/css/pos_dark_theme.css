@@ -173,7 +173,9 @@
 .payment-screen .total .price-formatter {
     background: linear-gradient(135deg, #fbcfe8 0%, #f472b6 100%) !important;
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
 }
 
 /* Payment buttons (Customer, Invoice, Back) */

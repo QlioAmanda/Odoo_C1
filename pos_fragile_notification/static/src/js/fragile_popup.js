@@ -1,6 +1,5 @@
 /** @odoo-module **/
 
-import { ProductScreen } from "@point_of_sale/app/screens/product_screen/product_screen";
 import { ProductCard } from "@point_of_sale/app/components/product_card/product_card";
 import { PosStore } from "@point_of_sale/app/services/pos_store";
 import { patch } from "@web/core/utils/patch";
@@ -45,7 +44,7 @@ function showPremiumFragileWarning(productName, onConfirm) {
     // 3. Konten kartu — lebih compact
     card.innerHTML = `
         <div style="font-size: 38px; margin-bottom: 10px; animation: fragilePulse 2s infinite;">⚠️</div>
-        <h2 style="margin: 0 0 6px 0; font-size: 17px; font-weight: 800; background: linear-gradient(to right, #fca5a5, #f87171, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: 0.01em;">
+        <h2 style="margin: 0 0 6px 0; font-size: 17px; font-weight: 800; background: linear-gradient(to right, #fca5a5, #f87171, #ef4444); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; letter-spacing: 0.01em;">
             PERINGATAN: BARANG PECAH BELAH!
         </h2>
         <h3 style="margin: 0 0 14px 0; font-size: 14px; font-weight: 700; color: #f87171;">

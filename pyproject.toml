@@ -1,0 +1,3 @@
+[tool.pyrefly]
+python_interpreter = "C:\\Python314\\python.exe"
+ignore_errors = ["untyped-import"]
